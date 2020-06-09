@@ -1,0 +1,97 @@
+<!-- layout/fav_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listpagebg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/headText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Favourite List"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:dividerHeight="15dp"
+            >
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:onClick="listClicked"
+            android:background="@drawable/list"/>
+        <TextView
+            android:id="@id/textViewMiddleOne"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn1"
+            android:text="">
+        </TextView>
+        <ImageView
+            android:id="@+id/middleImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/textViewMiddleOne"
+            android:background="@drawable/seprator"
+            >
+        </ImageView>
+        <TextView
+            android:id="@id/textViewMiddle"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/middleImage"
+            android:text="">
+        </TextView>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/textViewMiddle"
+            android:onClick="favClicked"
+            android:text=""
+            android:background="@drawable/fav_filled" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:text="Homepage                                    Favourite List"
+        >
+
+    </TextView>
+
+</LinearLayout>

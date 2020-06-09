@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetail"
+    android:background="@drawable/detailspagebg">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/favButton"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:background="@drawable/fav"
+        android:onClick="favClicked"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right"
+        />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:background="@drawable/share"
+            android:onClick="share"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:padding="5dp"
+        />
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:src="@drawable/map1" />
+        <TextView
+            android:id="@+id/locView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView1"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ratingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        />
+
+        <TextView
+            android:id="@+id/openView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:padding="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:paddingBottom="20dp"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/weatherView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/weather"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:paddingBottom="20dp"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="75dp"
+            >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Add Notes"
+            android:shadowColor="#0B6683"
+            android:id="@+id/addNotes"
+            android:onClick="addNotes"
+            android:textColor="#FFF"
+            android:background="#4275f5"
+            />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="Clear"
+                android:layout_marginLeft="50dp"
+                android:shadowColor="#0B6683"
+                android:id="@+id/clearNotes"
+                android:onClick="clearNotes"
+                android:textColor="#FFF"
+                android:background="#4275f5"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="Open in Map"
+            android:shadowColor="#0B6683"
+            android:layout_gravity="center"
+            android:id="@+id/mapOpen"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="0dp"
+            android:textColor="#000"
+            android:background="@drawable/shapebtnlogin"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
